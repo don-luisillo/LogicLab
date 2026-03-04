@@ -1,0 +1,157 @@
+.dark {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark header {
+    background: #111;
+}
+
+.dark .menu-item {
+    background: #2c2c2c;
+}
+
+.dark button {
+    background: #555;
+}
+
+.dark button:hover {
+    background: #777;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+}
+
+#modoBtn{
+    margin-bottom: 15px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.menu-item-index{
+    float: left;
+    width: 97%;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: all 300ms;
+}
+
+.menu-item {
+    float: left;
+    width: 29.3%;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: all 300ms;
+}
+
+.menu-item:hover,
+.menu-item-index:hover{
+    background-color: #111;
+    transform: scale(1.05);
+}
+
+.menu-item:hover h2,
+.menu-item-index:hover h2,
+.menu-item:hover h3,
+.menu-item-index:hover h3,
+.menu-item:hover p,
+.menu-item-index:hover p{
+  color: #fff;
+  animation: caida 250ms linear;
+}
+
+@keyframes caida{
+  from{
+    opacity: 0;
+    transform: translateY(-300%);
+    color: black;
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0%);
+    color: #fff;
+  }
+}
+
+.menu-item:hover .buttonAnimacion{
+    animation: giro 300ms linear;
+}
+
+@keyframes giro{
+  from{
+    opacity: 0;
+    transform: translateX(-300%);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.clear {
+    clear: both;
+}
+
+button {
+    padding: 10px 15px;
+    background: #3498db;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+input {
+    padding: 8px;
+    margin: 10px 0;
+}
+
+.container2{
+    width: 200px;
+    height: 200px;
+}
+
+#puntaje {
+    animation: ganaste 2s linear infinite;
+}
+
+@keyframes ganaste {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

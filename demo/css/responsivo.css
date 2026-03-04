@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+  .menu-item{
+    width: 46%;
+  }
+}
+@media (max-width: 480px) {
+  .menu-item{
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}

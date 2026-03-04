@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LogicLab</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Resultado</h1>
+    <button id="modoBtn">Modo Oscuro</button>
+  </header>
+
+  <div class="container">
+    <div class="container2">
+      <p id="puntaje"></p>
+      <a href="menu.html"><button>Volver al menú</button></a>
+    </div>
+
+  </div>
+
+  <script>
+    var parametros = window.location.search;
+    var puntaje = 0;
+
+    if (parametros.indexOf("score=1") != -1) {
+      puntaje = 1;
+    }
+
+    document.getElementById("puntaje").textContent = "CORRECTO!";
+  </script>
+  <script src="../js/darkmode.js"></script>
+
+</body>
+
+</html>
